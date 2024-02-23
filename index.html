@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <title>CRIPTOgrafia</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo da CRIPTOgrafia"> 
+    </header>
+    <main class="mensagens">
+        <section class="mensagem__envio__texto">
+            <img src="img/mensagem.png" alt="Digite sua mensagem">
+            <textarea id="textarea" class="container__input" placeholder="Digite sua mensagem aqui"></textarea>
+            <div class="botoes__container">
+                <button type="button" id="buttonCripto" class="botoes">
+                    <img src="img/botao criptografar.png" alt="Botão criptografar">
+                </button>
+                <button type="button" id="buttonDescripto" class="botoes">
+                    <img src="img/botao descriptografar.png" alt="Botão descriptografar">
+                </button>
+            </div>
+            <img src="img/apenas letras minúsculas  sem acento..png" alt="Aviso de apenas letras minúsculas" class="container__mensagem__aviso">
+        </section>
+        <section class="section__imagem"> 
+            <div id="div__aparece__" class="container__inner__">
+                <img src="img/caixa mensagem 1.png" alt="Caixa sem mensagem" class="container__caixa__mensagem">
+            </div>
+            <div id="div__aparece" class="container__inner">
+                <img src="img/caixa mensagem resultado.png" alt="Caixa com mensagem" class="container__caixa__mensagem">           
+                <textarea id="container" class="container__input2"></textarea> 
+                <button type="button" onclick="copiar()" class="botao__copiar">
+                    <img src="img/botao copiar.png" alt="Botão copiar">
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
